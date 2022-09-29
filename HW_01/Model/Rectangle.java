@@ -1,16 +1,16 @@
 package java_35e_HW.HW_01.Model;
 
 public class Rectangle {
-    private int width;
     private int leight;
+    private int width;
 
-    public Rectangle(int width, int leight) {
-        this.width = width;
+    public Rectangle(int leight, int width) {
         this.leight = leight;
+        this.width = width;
     }
 
-    private int Area(int width, int leight) {
-        return width * leight * 2;
+    private int Area(int leight, int width) {
+        return leight * width;
     }
 
     public void outputArea() {
