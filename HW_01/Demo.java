@@ -35,7 +35,6 @@ public class Demo {
     //Введите длину: 10
     //Введите ширину:5
     //Площадь: 50
-
         Scanner in = new Scanner(System.in);
         System.out.print("Введите длину: ");
         int leight = in.nextInt();
@@ -47,10 +46,6 @@ public class Demo {
 
         Area area1 = new Area(leight, width);
         System.out.println("Площадь: " + area1.returnArea());
-
-
     }
-
-
 
 }
