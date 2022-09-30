@@ -1,4 +1,4 @@
-package java_35e_HW.HW_02.Model;
+package java_35e_HW.HW_02.Lev1_01.Model;
 
 public class Cat extends Animal{
     private String color;

@@ -1,6 +1,6 @@
-package java_35e_HW.HW_02;
+package java_35e_HW.HW_02.Lev1_01;
 
-import java_35e_HW.HW_02.Model.*;
+import java_35e_HW.HW_02.Lev1_01.Model.*;
 
 public class Main {
     public static void main(String[] args) {
