@@ -9,6 +9,7 @@ public class Studio{
             if (cl.sex == Sex.FEMALE){
                 System.out.println("Наименование: " + cl.name);
                 System.out.println("Размер: " + cl.clothesSize);
+                System.out.println("Евро размер: " + cl.clothesSize.getEuroSize());
                 System.out.println("Цена: " + cl.price);
                 System.out.println("Цвет: " + cl.color);
                 System.out.println();
@@ -21,6 +22,7 @@ public class Studio{
             if (cl.sex == Sex.MALE){
                 System.out.println("Наименование: " + cl.name);
                 System.out.println("Размер: " + cl.clothesSize);
+                System.out.println("Евро размер: " + cl.clothesSize.getEuroSize());
                 System.out.println("Цена: " + cl.price);
                 System.out.println("Цвет: " + cl.color);
                 System.out.println();

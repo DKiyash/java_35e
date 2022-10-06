@@ -21,4 +21,8 @@ public enum ClothesSizes {
     public void getDescription() {
         System.out.println("Взрослый размер");
     }
+
+    public int getEuroSize() {
+        return euroSize;
+    }
 }
