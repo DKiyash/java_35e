@@ -1,4 +1,4 @@
-package java_35e_HW.ClassWork_02;
+package java_35e_HW.ClassWork_02.Task_01;
 
 import java.util.Comparator;
 

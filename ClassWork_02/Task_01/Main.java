@@ -1,12 +1,10 @@
-package java_35e_HW.ClassWork_02;
-
-import java_35e_HW.ClassWork_02.Movie;
+package java_35e_HW.ClassWork_02.Task_01;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Tasks {
+public class Main {
     public static void main(String[] args) {
         List<Movie> list1 = new ArrayList<>();
         list1.add(new Movie(4, "Name_1", 1999));
@@ -40,9 +38,4 @@ public class Tasks {
     Выведите фильмы до сортировки и после сортировки.
     2. К прошлому заданию выполните сортировку по имени, рейтингу с помощью Comporator,
      а сортировку по годам оставьте неизменной.
-    3. Создать класс Товар, имеющий переменные имя, цена, рейтинг.
-    Создать класс Категория, имеющий переменные имя и множество товаров.
-     Создать несколько объектов класса Категория.
-     Создать метод, распечатывающий товары каталога, отсортированные по имени, цене или рейтингу.
-    Используем классы компараторы для каждого вида сортировки.
-     */
+*/
