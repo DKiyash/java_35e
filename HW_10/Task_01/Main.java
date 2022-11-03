@@ -2,7 +2,7 @@ package java_35e_HW.HW_10.Task_01;
 
 public class Main {
     public static void main(String[] args) {
-        MyStack myStack = new MyStack();
+        MyStack<String> myStack = new MyStack<>();
         System.out.println(myStack);
         System.out.println(myStack.size());
         //Проверка работы команды pop при пустом массиве
@@ -14,7 +14,7 @@ public class Main {
         myStack.push("Second");
         myStack.push("Third");
         myStack.push("Forth");
-        myStack.push(85);
+        myStack.push("Fifth");
         System.out.println(myStack);
         System.out.println(myStack.size());
         System.out.println();

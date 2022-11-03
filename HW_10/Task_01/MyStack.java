@@ -2,7 +2,7 @@ package java_35e_HW.HW_10.Task_01;
 
 import java.util.Arrays;
 
-public class MyStack {
+public class MyStack <E> {
     private Object[] array;
     private int size = 0;
 
@@ -10,7 +10,7 @@ public class MyStack {
         this.array = new Object[size];
     }
 
-    public void push(Object str) {
+    public void push(E str) {
         //увеличение размера нового массива
         size++;
         //создание нового массива
