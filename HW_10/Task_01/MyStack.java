@@ -24,15 +24,15 @@ public class MyStack <E> {
         //передача указателя на новый массив
         array = newArray;
     }
-    public Object peek() {
+    public E peek() {
         //возвращение последнего элемента массива
-        return array[size - 1];
+        return (E) array[size - 1];
     }
-    public Object pop() {
+    public E pop() {
         //проверка, что массив не пустой
         if (array.length == 0) return null;
         //запоминаем последний элемент изначального массива
-        Object tmp = array[size - 1];
+        E tmp = (E) array[size - 1];
         //уменьшение размера нового массива
         size--;
         //создание нового массива
