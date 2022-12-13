@@ -6,15 +6,6 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         List<Integer> list = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);
-//        list.add(1);
-//        list.add(3);
-//        list.add(10);
-//        list.add(7);
-//        list.add(2);
-//        list.add(20);
-//        list.add(8);
-//        list.add(11);
-//        list.add(5);
         System.out.println(list);
         System.out.println(chekList1(list));
         System.out.println(chekList2(chekList1(list)));
