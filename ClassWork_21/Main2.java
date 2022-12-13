@@ -21,7 +21,7 @@ public class Main2 {
         fos.flush();
         fis.close();
         fos.close();
-//        out.write();
+//        DataInputStream dfis = new DataInputStream(new FileInputStream(fileB, true));
     }
 }
 

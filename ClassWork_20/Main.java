@@ -1,9 +1,6 @@
 package java_35e_HW.ClassWork_20;
 
-import java.util.Collections;
-import java.util.Random;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,12 +9,19 @@ public class Main {
         // Реализуйте метод put, чтобы он сохранял эти значения в некоторой структуре
         // И метод top, возвращающий 5 наибольших значений из тех, которые были получены к текущему моменту
         // Без повторений
+        List<Integer> list = new ArrayList<>();
         Set<Integer> set = new TreeSet<>();
         Random random = new Random();
-        for (int i = 0; i < 1_000_000; i++) {
+        for (int i = 0; i < 10; i++) {
             put(random.nextInt(), set);
         }
-        System.out.println(set);
+        list.addAll(set);
+        set.clear();
+        Collections.reverse(list);
+        System.out.println(list);
+        System.out.println(
+                Arrays.toString(top(list)));
+
 
     }
 
@@ -27,9 +31,12 @@ public class Main {
     }
 
     // Выводит 5 наибольших значений
-    static int[] top() {
-
-        return new int[0];
+    static int[] top(List<Integer> list) {
+        int[] res = new int[5];
+        for (int i = 0; i < 5; i++) {
+            res[i] = list.get(i);
+        }
+        return res;
     }
 
 
