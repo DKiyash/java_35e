@@ -21,8 +21,7 @@ public class Main {
         List<Integer> tmp = new ArrayList<>();
         boolean f = false;
         for (int i : list) {
-            if (i == 0 && i ==1) {
-                tmp.add(i);
+            if (i == 0 || i ==1) {
                 continue;
             }
             for (int j = 2; j < i; j++) {
