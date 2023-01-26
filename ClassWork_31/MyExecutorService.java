@@ -1,13 +1,18 @@
 package java_35e_HW.ClassWork_31;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.*;
 
 public class MyExecutorService implements ExecutorService {
+    List<Thread> threadList = new ArrayList<>();
+
     @Override
     public void shutdown() {
-        Thread.currentThread().interrupt();
+        for (int i = 0; i < 2; i++) {
+            threadList.get(i).interrupt();
+        }
     }
 
     @Override
@@ -42,8 +47,11 @@ public class MyExecutorService implements ExecutorService {
 
     @Override
     public Future<?> submit(Runnable task) {
-        new Thread(task).start();
-        new Thread(task).start();
+        for (int i = 0; i < 2; i++) {
+            Thread thread = new Thread(task);
+            threadList.add(thread);
+            thread.start();
+        }
         return null;
     }
 
@@ -82,10 +90,10 @@ public class MyExecutorService implements ExecutorService {
                     System.out.println(Thread.currentThread().getName() + " i = " + i);
                 }
             } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+                System.out.println("Stop");;
             }
         });
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         myExecutorService.shutdown();
 
     }
